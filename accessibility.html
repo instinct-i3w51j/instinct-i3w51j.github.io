@@ -17,6 +17,7 @@
   a:focus-visible { outline:2px solid var(--navy); outline-offset:2px; }
   header.nav { border-bottom:1px solid var(--hairline); }
   .nav-inner { display:flex; align-items:center; gap:10px; padding:12px 0; }
+  .brand { display:flex; align-items:center; gap:10px; }
   .brand img { width:40px; height:40px; object-fit:contain; border-radius:8px; }
   .brand-name { font-size:17px; }
   .nav-inner a.back { margin-inline-start:auto; font-size:14px; color:var(--ink2); text-decoration:none; }
@@ -34,8 +35,10 @@
 <a class="skip-link" href="#main">דלג לתוכן הראשי</a>
 <header class="nav">
   <div class="wrap nav-inner">
-    <img src="logo.png" alt="לוגו משרד עו״ד רפאל גד רוט">
-    <span class="brand-name">משרד עו״ד רפאל גד רוט</span>
+    <div class="brand">
+      <img src="logo.png" alt="לוגו משרד עו״ד רפאל גד רוט">
+      <span class="brand-name">משרד עו״ד רפאל גד רוט</span>
+    </div>
     <a class="back" href="index.html">חזרה לאתר</a>
   </div>
 </header>
