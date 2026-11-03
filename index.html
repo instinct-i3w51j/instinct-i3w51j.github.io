@@ -40,7 +40,13 @@
   .card .detail { color:var(--ink2); font-size:14px; }
   .more { color:var(--ink2); font-size:14px; margin-top:14px; }
 
-  .about p { font-size:15px; margin:0; }
+  .about-wrap { display:flex; flex-direction:column; gap:20px; align-items:center; }
+  .about-wrap img { width:100%; max-width:240px; border-radius:12px; box-shadow:0 4px 18px rgba(15,36,64,.18); }
+  .about-wrap p { font-size:15px; margin:0; flex:1; }
+  @media (min-width:768px) {
+    .about-wrap { flex-direction:row; align-items:center; }
+    .about-wrap img { max-width:280px; }
+  }
 
   .contact-list { display:flex; flex-direction:column; }
   .contact-row { display:flex; justify-content:space-between; gap:16px; padding:12px 0; border-bottom:1px solid var(--hairline); font-size:15px; }
@@ -97,7 +103,10 @@
 
   <section id="about" class="about">
     <h2>אודות המשרד</h2>
-    <p>עו״ד רפאל גד רוט, בעל תואר ראשון בפסיכולוגיה ותואר נוסף במשפטים. צבר ניסיון במשרדים מובילים, בהם פרל כהן ומיתר, ומתמחה בצומת שבין משפט לטכנולוגיה, לרבות דיני סייבר, נזיקין ומשפט אזרחי, עם ידע רחב במשפט המנהלי. בעל הכשרה מקצועית בסייבר.</p>
+    <div class="about-wrap">
+      <img src="rafael-about.jpg" alt="עו״ד רפאל גד רוט">
+      <p>עו״ד רפאל גד רוט, בעל תואר ראשון בפסיכולוגיה ותואר נוסף במשפטים. צבר ניסיון במשרדים מובילים, בהם פרל כהן ומיתר, ומתמחה בצומת שבין משפט לטכנולוגיה, לרבות דיני סייבר, נזיקין ומשפט אזרחי, עם ידע רחב במשפט המנהלי. בעל הכשרה מקצועית בסייבר.</p>
+    </div>
   </section>
 
   <section id="contact">
