@@ -55,6 +55,15 @@
   .wa-btn svg { width:20px; height:20px; fill:#fff; flex:none; }
   .wa-btn:hover { opacity:.92; }
 
+  .vision { text-align:center; padding:34px 0 26px; }
+  .vision-text { font-family: Georgia, "Times New Roman", serif; color:var(--navy); font-size:21px; line-height:1.55; margin:0 auto; max-width:640px; }
+  .steps-grid { grid-template-columns:1fr; }
+  .step-num { display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:var(--navy); color:#fff; font-size:14px; font-weight:600; margin-bottom:8px; }
+  @media (min-width:768px) {
+    .vision-text { font-size:25px; }
+    .steps-grid { grid-template-columns:1fr 1fr 1fr; }
+  }
+
   footer { border-top:1px solid var(--hairline); margin-top:12px; padding:18px 0 30px; color:var(--ink2); font-size:13px; text-align:center; }
 
   @media (min-width:768px) {
@@ -100,6 +109,19 @@
     <p class="more">ובתחומים נוספים.</p>
   </section>
 
+
+  <section id="vision" class="vision">
+    <p class="vision-text">משרדנו משלב ידע משפטי, הבנת האדם והכרת הטכנולוגיה, כדי לתת לכל לקוח מענה מדויק ואישי.</p>
+  </section>
+
+  <section id="steps">
+    <h2>איך מתחילים</h2>
+    <div class="grid steps-grid">
+      <div class="card"><div class="step-num">1</div><div class="name">פנייה</div><div class="detail">יצירת קשר ראשונית בטלפון, בדוא״ל או בוואטסאפ.</div></div>
+      <div class="card"><div class="step-num">2</div><div class="name">שיחת ייעוץ</div><div class="detail">שיחה להבנת הצרכים והנסיבות שלך.</div></div>
+      <div class="card"><div class="step-num">3</div><div class="name">ליווי מלא</div><div class="detail">ליווי משפטי אישי לאורך כל הדרך.</div></div>
+    </div>
+  </section>
 
   <section id="contact">
     <h2>צור קשר</h2>
