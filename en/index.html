@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rafael Gad Roth Law Office</title>
+<meta name="description" content="Rafael Gad Roth Law Office - legal counsel and representation in tort, family law, wills, cyber law, administrative law and real estate. Jerusalem.">
+<meta property="og:title" content="Rafael Gad Roth Law Office">
+<meta property="og:description" content="Legal counsel and representation - tort, family law, wills, cyber, administrative, real estate.">
+<meta property="og:image" content="logo.png">
+<meta property="og:type" content="website">
+<style>
+  :root { --navy:#1e2b5e; --ink:#251f21; --ink2:#585254; --hairline:#eae9ea; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: "Segoe UI", Arial, "Helvetica Neue", sans-serif; color:var(--ink); background:#fff; line-height:1.6; }
+  h1,h2,.brand-name { font-family: Georgia, "Times New Roman", serif; font-weight:400; color:var(--navy); }
+  a { color:inherit; }
+  .wrap { max-width:960px; margin:0 auto; padding:0 20px; }
+
+  header.nav { border-bottom:1px solid var(--hairline); }
+  .nav-inner { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; padding:12px 0; }
+  .brand { display:flex; align-items:center; gap:10px; }
+  .brand img { width:40px; height:40px; object-fit:contain; border-radius:8px; }
+  .brand-name { font-size:17px; }
+  .nav-links { display:flex; gap:18px; font-size:14px; }
+  .nav-links a { color:var(--ink2); text-decoration:none; }
+  .nav-links a:hover { color:var(--navy); }
+
+  .hero { text-align:center; padding:48px 0 36px; }
+  .hero img { width:200px; max-width:55%; height:auto; border-radius:12px; }
+  .hero h1 { font-size:30px; letter-spacing:-0.02em; margin:20px 0 6px; }
+  .hero .tagline { color:var(--ink2); font-size:16px; margin:0 0 20px; }
+  .cta { display:inline-block; background:var(--navy); color:#fff; text-decoration:none; font-size:15px; padding:11px 26px; border-radius:6px; }
+
+  section { padding:28px 0; }
+  section h2 { font-size:22px; margin:0 0 18px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .card { border:1px solid var(--hairline); border-radius:12px; padding:16px 18px; }
+  .card .name { font-weight:600; color:var(--navy); font-size:16px; margin-bottom:4px; }
+  .card .detail { color:var(--ink2); font-size:14px; }
+  .more { color:var(--ink2); font-size:14px; margin-top:14px; }
+
+
+  .contact-list { display:flex; flex-direction:column; }
+  .contact-row { display:flex; justify-content:space-between; gap:16px; padding:12px 0; border-bottom:1px solid var(--hairline); font-size:15px; }
+  .contact-row:last-child { border-bottom:none; }
+  .contact-row .label { color:var(--ink2); }
+  .contact-row .value { font-weight:600; text-align:left; direction:ltr; }
+  .contact-row .value.he { direction:rtl; }
+  .contact-row a.value { color:var(--navy); text-decoration:none; }
+  .skip-link { position:absolute; right:-9999px; top:0; background:var(--navy); color:#fff; padding:10px 18px; border-radius:0 0 6px 6px; z-index:99; text-decoration:none; font-size:14px; }
+  .skip-link:focus { right:0; }
+  a:focus-visible, button:focus-visible { outline:2px solid var(--navy); outline-offset:2px; }
+  .wa-btn { display:inline-flex; align-items:center; gap:10px; margin-top:18px; background:var(--navy); color:#fff; text-decoration:none; font-size:15px; font-weight:600; padding:11px 24px; border-radius:6px; }
+  .wa-btn svg { width:20px; height:20px; fill:#fff; flex:none; }
+  .wa-btn:hover { opacity:.92; }
+
+  .vision { text-align:center; padding:34px 0 26px; }
+  .vision-text { font-family: Georgia, "Times New Roman", serif; color:var(--navy); font-size:21px; line-height:1.55; margin:0 auto; max-width:640px; }
+  .steps-grid { grid-template-columns:1fr; }
+  .step-num { display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:var(--navy); color:#fff; font-size:14px; font-weight:600; margin-bottom:8px; }
+  @media (min-width:768px) {
+    .vision-text { font-size:25px; }
+    .steps-grid { grid-template-columns:1fr 1fr 1fr; }
+  }
+
+  .lang-switch { font-size:13px; color:var(--ink2); text-decoration:none; border:1px solid var(--hairline); border-radius:20px; padding:4px 12px; }
+  .lang-switch:hover { color:var(--navy); border-color:var(--navy); }
+  .form-intro { color:var(--ink2); font-size:14px; margin:16px 0 14px; }
+  .contact-form { max-width:520px; }
+  .form-row { margin-bottom:14px; }
+  .form-row label { display:block; font-size:14px; font-weight:600; margin-bottom:5px; }
+  .req { color:#b3261e; }
+  .form-row input, .form-row textarea { width:100%; padding:10px 12px; border:1px solid #d6d4d5; border-radius:6px; font-family:inherit; font-size:15px; background:#fff; }
+  .form-row input:focus, .form-row textarea:focus { outline:2px solid var(--navy); outline-offset:1px; border-color:var(--navy); }
+  .hp-field { position:absolute; left:-9999px; width:1px; height:1px; opacity:0; }
+  .form-submit { border:none; cursor:pointer; font-family:inherit; }
+
+  footer { border-top:1px solid var(--hairline); margin-top:12px; padding:18px 0 30px; color:var(--ink2); font-size:13px; text-align:center; }
+
+  @media (min-width:768px) {
+    .grid { grid-template-columns:1fr 1fr 1fr; }
+    .hero h1 { font-size:38px; }
+    .hero img { width:220px; }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <div class="brand">
+      <img src="logo.png" alt="Rafael Gad Roth Law Office logo">
+      <span class="brand-name">Rafael Gad Roth Law Office</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#areas">Practice Areas</a>
+      <a href="#contact">Contact</a>
+      <a class="lang-switch" href="/" hreflang="he" lang="he">עברית</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+  <section class="hero">
+    <img src="logo.png" alt="Rafael Gad Roth Law Office logo">
+    <h1>Rafael Gad Roth Law Office</h1>
+    <p class="tagline">Legal counsel and representation</p>
+    <a class="cta" href="#contact">Contact us</a>
+  </section>
+
+  <section id="areas">
+    <h2>Practice Areas</h2>
+    <div class="grid">
+      <div class="card"><div class="name">Tort Law</div><div class="detail">Legal counsel and representation in tort law.</div></div>
+      <div class="card"><div class="name">Family Law</div><div class="detail">Legal counsel and representation in family law.</div></div>
+      <div class="card"><div class="name">Wills</div><div class="detail">Legal counsel and representation in wills and inheritance.</div></div>
+      <div class="card"><div class="name">Cyber Law</div><div class="detail">Legal counsel and representation in cyber law.</div></div>
+      <div class="card"><div class="name">Administrative Law</div><div class="detail">Legal counsel and representation in administrative law.</div></div>
+      <div class="card"><div class="name">Real Estate</div><div class="detail">Legal counsel and representation in real estate.</div></div>
+    </div>
+    <p class="more">And additional practice areas.</p>
+  </section>
+
+
+  <section id="vision" class="vision">
+    <p class="vision-text">Our firm combines legal expertise, an understanding of people, and technological fluency. We believe good counsel begins with listening and ends with a solution that truly serves the client, guiding every client with confidence at the intersection of law, technology, and people.</p>
+  </section>
+
+  <section id="steps">
+    <h2>Getting Started</h2>
+    <div class="grid steps-grid">
+      <div class="card"><div class="step-num">1</div><div class="name">Reach Out</div><div class="detail">Get in touch by phone, email, or WhatsApp.</div></div>
+      <div class="card"><div class="step-num">2</div><div class="name">Consultation</div><div class="detail">A conversation to understand your needs and circumstances.</div></div>
+      <div class="card"><div class="step-num">3</div><div class="name">Full Representation</div><div class="detail">Personal legal guidance every step of the way.</div></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-list">
+      <div class="contact-row"><span class="label">Phone</span><a class="value" href="tel:+972505542224">050-5542224</a></div>
+      <div class="contact-row"><span class="label">Email</span><a class="value" href="mailto:office@rafaelroth.com">office@rafaelroth.com</a></div>
+      <div class="contact-row"><span class="label">Office location</span><span class="value">Jerusalem</span></div>
+      <div class="contact-row"><span class="label">Office hours</span><span class="value">Sunday-Thursday, 08:00-18:00</span></div>
+    </div>
+    <a class="wa-btn" href="https://wa.me/972505542224" target="_blank" rel="noopener" aria-label="Send us a WhatsApp message">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
+      Message us on WhatsApp
+    </a>
+
+    <p class="form-intro">Or leave your details and we will get back to you:</p>
+    <form class="contact-form" action="https://formspree.io/f/mjyypdaq" method="POST">
+      <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="_subject" value="New inquiry from rafaelroth.com (EN)">
+      <div class="form-row">
+        <label for="f-name">Full name <span class="req" aria-hidden="true">*</span></label>
+        <input id="f-name" type="text" name="name" required autocomplete="name" title="Please fill in this field" oninvalid="this.setCustomValidity('Please fill in this field')" oninput="this.setCustomValidity('')">
+      </div>
+      <div class="form-row">
+        <label for="f-phone">Phone <span class="req" aria-hidden="true">*</span></label>
+        <input id="f-phone" type="tel" name="phone" required autocomplete="tel" inputmode="tel" title="Please fill in this field" oninvalid="this.setCustomValidity('Please fill in this field')" oninput="this.setCustomValidity('')">
+      </div>
+      <div class="form-row">
+        <label for="f-email">Email <span class="req" aria-hidden="true">*</span></label>
+        <input id="f-email" type="email" name="email" required autocomplete="email" dir="ltr" style="text-align:left" title="Please enter a valid email address" oninvalid="this.setCustomValidity('Please enter a valid email address')" oninput="this.setCustomValidity('')">
+      </div>
+      <div class="form-row">
+        <label for="f-msg">Message <span class="req" aria-hidden="true">*</span></label>
+        <textarea id="f-msg" name="message" rows="4" required title="Please fill in this field" oninvalid="this.setCustomValidity('Please fill in this field')" oninput="this.setCustomValidity('')"></textarea>
+      </div>
+      <button type="submit" class="cta form-submit">Send</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Rafael Gad Roth Law Office · rafaelroth.com · <a href="/en/accessibility.html" style="color:inherit">Accessibility Statement</a></div>
+</footer>
+</body>
+</html>
