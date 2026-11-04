@@ -38,6 +38,11 @@
   .card { border:1px solid var(--hairline); border-radius:12px; padding:16px 18px; }
   .card .name { font-weight:600; color:var(--navy); font-size:16px; margin-bottom:4px; }
   .card .detail { color:var(--ink2); font-size:14px; }
+  .card .subs { margin:6px 0 0; padding:0; padding-inline-start:18px; color:var(--ink2); font-size:14px; line-height:1.8; }
+  .card .subs li { margin:0; }
+  @media (max-width:767px) {
+    #areas .grid { grid-template-columns:1fr; }
+  }
   .more { color:var(--ink2); font-size:14px; margin-top:14px; }
 
 
@@ -112,12 +117,12 @@
   <section id="areas">
     <h2>תחומי התמחות</h2>
     <div class="grid">
-      <div class="card"><div class="name">נזיקין</div><div class="detail">ייעוץ וייצוג משפטי בתחום הנזיקין.</div></div>
-      <div class="card"><div class="name">משפחה</div><div class="detail">ייעוץ וייצוג משפטי בתחום דיני המשפחה.</div></div>
-      <div class="card"><div class="name">צוואות</div><div class="detail">ייעוץ וייצוג משפטי בנושאי צוואות.</div></div>
-      <div class="card"><div class="name">סייבר</div><div class="detail">ייעוץ וייצוג משפטי בתחום דיני הסייבר.</div></div>
-      <div class="card"><div class="name">מנהלי</div><div class="detail">ייעוץ וייצוג משפטי בתחום המשפט המנהלי.</div></div>
-      <div class="card"><div class="name">מקרקעין</div><div class="detail">ייעוץ וייצוג משפטי בתחום המקרקעין.</div></div>
+      <div class="card"><div class="name">נזיקין</div><ul class="subs"><li>תאונות דרכים</li><li>תאונות עבודה</li><li>רשלנות רפואית</li><li>נזקי גוף</li><li>תביעות ביטוח וביטוח לאומי</li></ul></div>
+      <div class="card"><div class="name">משפחה</div><ul class="subs"><li>גירושין והסכמי גירושין</li><li>מזונות ומשמורת ילדים</li><li>הסכמי ממון</li><li>גישור ויישוב סכסוכי משפחה</li><li>אפוטרופסות</li></ul></div>
+      <div class="card"><div class="name">צוואות</div><ul class="subs"><li>עריכת צוואה וצוואות הדדיות</li><li>ייפוי כוח מתמשך</li><li>צו קיום צוואה וצו ירושה</li><li>ניהול וחלוקת עיזבון</li><li>התנגדות לצוואה</li></ul></div>
+      <div class="card"><div class="name">סייבר</div><ul class="subs"><li>פרטיות והגנה על מידע אישי</li><li>לשון הרע ופגיעה במוניטין ברשת</li><li>הונאות ועבירות מקוונות</li><li>הסכמי שימוש ומדיניות פרטיות לאתרים ואפליקציות</li></ul></div>
+      <div class="card"><div class="name">מנהלי</div><ul class="subs"><li>עתירות ועררים מול רשויות</li><li>רישוי עסקים</li><li>בקשות חופש מידע</li><li>ייצוג מול רשויות ממשל ורשויות מקומיות</li></ul></div>
+      <div class="card"><div class="name">מקרקעין</div><ul class="subs"><li>רכישה ומכירה של דירות ונכסים</li><li>חוזי שכירות</li><li>רישום זכויות בטאבו</li><li>עסקאות קבלן וקבוצות רכישה</li><li>התחדשות עירונית: תמ"א 38 ופינוי בינוי</li></ul></div>
     </div>
     <p class="more">ובתחומים נוספים.</p>
   </section>
