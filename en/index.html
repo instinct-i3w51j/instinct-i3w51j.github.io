@@ -38,6 +38,11 @@
   .card { border:1px solid var(--hairline); border-radius:12px; padding:16px 18px; }
   .card .name { font-weight:600; color:var(--navy); font-size:16px; margin-bottom:4px; }
   .card .detail { color:var(--ink2); font-size:14px; }
+  .card .subs { margin:6px 0 0; padding:0; padding-inline-start:18px; color:var(--ink2); font-size:14px; line-height:1.8; }
+  .card .subs li { margin:0; }
+  @media (max-width:767px) {
+    #areas .grid { grid-template-columns:1fr; }
+  }
   .more { color:var(--ink2); font-size:14px; margin-top:14px; }
 
 
@@ -112,12 +117,12 @@
   <section id="areas">
     <h2>Practice Areas</h2>
     <div class="grid">
-      <div class="card"><div class="name">Tort Law</div><div class="detail">Legal counsel and representation in tort law.</div></div>
-      <div class="card"><div class="name">Family Law</div><div class="detail">Legal counsel and representation in family law.</div></div>
-      <div class="card"><div class="name">Wills &amp; Inheritance</div><div class="detail">Legal counsel and representation in wills and inheritance.</div></div>
-      <div class="card"><div class="name">Cyber Law</div><div class="detail">Legal counsel and representation in cyber law.</div></div>
-      <div class="card"><div class="name">Administrative Law</div><div class="detail">Legal counsel and representation in administrative law.</div></div>
-      <div class="card"><div class="name">Real Estate Law</div><div class="detail">Legal counsel and representation in real estate.</div></div>
+      <div class="card"><div class="name">Tort Law</div><ul class="subs"><li>Car Accidents</li><li>Work Accidents</li><li>Medical Malpractice</li><li>Personal Injury</li><li>Insurance &amp; National Insurance Institute Claims</li></ul></div>
+      <div class="card"><div class="name">Family Law</div><ul class="subs"><li>Divorce &amp; Divorce Agreements</li><li>Child Support &amp; Custody</li><li>Prenuptial &amp; Financial Agreements</li><li>Family Mediation &amp; Dispute Resolution</li><li>Guardianship</li></ul></div>
+      <div class="card"><div class="name">Wills &amp; Inheritance</div><ul class="subs"><li>Will Drafting &amp; Mutual Wills</li><li>Enduring Power of Attorney</li><li>Probate &amp; Inheritance Orders</li><li>Estate Administration &amp; Distribution</li><li>Will Contests</li></ul></div>
+      <div class="card"><div class="name">Cyber Law</div><ul class="subs"><li>Privacy &amp; Personal Data Protection</li><li>Online Defamation &amp; Reputation</li><li>Online Fraud &amp; Cybercrime</li><li>Terms of Use &amp; Privacy Policies for Websites and Apps</li></ul></div>
+      <div class="card"><div class="name">Administrative Law</div><ul class="subs"><li>Petitions &amp; Appeals to Authorities</li><li>Business Licensing</li><li>Freedom of Information Requests</li><li>Representation Before Government &amp; Local Authorities</li></ul></div>
+      <div class="card"><div class="name">Real Estate Law</div><ul class="subs"><li>Home &amp; Property Purchase and Sale</li><li>Lease Agreements</li><li>Land Registry (Tabu) Registration</li><li>Purchases from Developers &amp; Buying Groups</li><li>Urban Renewal: TAMA 38 &amp; Pinui-Binui</li></ul></div>
     </div>
     <p class="more">And additional practice areas.</p>
   </section>
